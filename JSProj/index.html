@@ -8,48 +8,80 @@
 
     <!--getElementById-->
     <!--DateTime-->
-    <h2>DateTime</h2>
+    <div class="sampleOneA">
+        <h2>DateTime</h2>
 
-    <button type="button" onclick="document.getElementById('demo').innerHTML =Date()">
-        Click me to display Date and Time.
-    </button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML =Date()">
+            Click me to display Date and Time.
+        </button>
 
-    <p id="demo"></p>
+        <p id="demo"></p>
+    </div>
+    
     <!--End DateTime-->
     <!--Changing Content-->
-    <h2>Changing Content</h2>
+    <div class="sampleOneB">
+        <h2>Changing Content</h2>
 
-    <p id="demo2">
-        JavaScript can change HTML content.
-    </p>
+        <p id="demo2">
+            JavaScript can change HTML content.
+        </p>
 
-    <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>
-        Click Me!
-    </button>
+        <button type="button" onclick='document.getElementById("demo2").innerHTML = "Hello JavaScript!"'>
+            Click Me!
+        </button>
+    </div>
+    
     <!--End Changing Content-->
     <!--Changing Attributes-->
-    <h2>The Light Bulb</h2>
+    <div class="sampleOneC">
+        <h2>The Light Bulb</h2>
 
-    <p>
-        JavScript can change HTML attribute values
-    </p>
+        <p>
+            JavScript can change HTML attribute values
+        </p>
 
-    <p>
-        JavaScript will change the value of the src (source) attribute of an image.
-    </p>
+        <p>
+            JavaScript will change the value of the src (source) attribute of an image.
+        </p>
 
-    <button onclick="document.getElementById("myImage").src="pic_bulbon.gif"">
-        Turn on the light.
-    </button>
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+            Turn on the light.
+        </button>
 
-    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
 
-    <button onclick="document.getElementById("myImage").src="pic_bulboff.gif"">
-        Turn off the light.
-    </button>
+        <button onclick="document.getElementById('myImage').src=" pic_bulboff.gif'">
+            Turn off the light.
+        </button>
+    </div>
+    <!--end changing attributes-->
+    <!--changing CSS Styles-->
+    <div class="sampleOneD">
+        <h2>Changing Font Size</h2>
 
+        <p id="demo3">
+            JavaScript can change the style of an HTML element.
+        </p>
 
+        <button type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">
+            Click Me!
+        </button>
+    </div>
+    <!--end changing HTML attributes-->
+    <!--hiding HTML Elements-->
+    <div class="sampleOneE">
+        <h2>Hiding Text</h2>
 
+        <p id="demo4">
+            JavaScript can hide HTML elements.
+        </p>
+
+        <button type="button" onclick="document.getElementById('demo4').style.display='none'">
+            Click Me!
+        </button>
+
+    </div>
 
 
 
