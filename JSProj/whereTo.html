@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!--JS function in <head>-->
+    <script>
+        function myFunction1() {
+            document.getElementById("demo7").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    
+
+</head>
+<body>
+
+    <!--JS Tags-->
+    <h2>
+        JS in Body
+    </h2>
+    <p id="demo6"></p>
+    <script>
+        document.getElementById("demo6").innerHTML = "My First Javascript";
+    </script>
+    <!--end JS in Body-->
+
+    <p>****************************************************</p>
+
+    <!--JS function in <head>-->
+    <h2>
+        JS in Head
+    </h2>
+    <p id="demo7">
+        A Paragraph.
+    </p>
+    <button type="button" onclick="myFunction1()">
+        Try it
+    </button>
+    <!--end JS function in <head>-->
+
+    <p>****************************************************</p>
+
+    <!--JS function in <body>: placing scripts at base of <body> increases display speed-->
+    <h2>
+        JS in Body
+    </h2>
+    <p id="demo8">
+        A Paragraph.
+    </p>
+    <button type="button" onclick="myFunction2()">
+        Try it
+    </button>
+    <script>
+        function myFunction2() {
+            document.getElementById('demo8').innerHTML = "Paragraphed changed again.";
+        }
+    </script>
+    <!--end JS in <body>-->
+
+    <p>****************************************************</p>
+
+    <!--JS in External File-->
+    <h2>
+        External JavaScript
+    </h2>
+    <p id="demo9">
+        A Paragraph.
+    </p>
+    <button type="button" onclick="myFunction3()">
+        Try it
+    </button>
+    <p>
+        (myFunction3 is stored in an external file called "JavaScript.js")
+    </p>
+    <script src="JavaScript.js"></script>
+
+    <!--You can have several script files on one page-->
+    <!--<script src="JavaScript1.js"></script>-->
+    <!--<script src="JavaScript2.js"></script>-->
+    <!--end JS in External File-->
+
+    <p>****************************************************</p>
+
+    <!--External References (full URL or path to web page)-->
+    <h2>
+        External Reference
+    </h2>
+    <p id="demo10">
+        A paragraph.
+    </p>
+    <button type="button" onclick="myFunction4()">
+        Try it again
+    </button>
+    <p>
+        (myFunction4 is stored in an external file called "JavaScript.js")
+    </p>
+        <script src="JavaScript.js"></script>
+
+
+
+
+
+
+</body>
+</html>

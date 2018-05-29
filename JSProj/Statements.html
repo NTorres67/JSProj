@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--JS Statements-->
+    <!--Example 1-->
+    <h3>
+        JavaScript Statements
+    </h3>
+    <p>
+        A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.
+    </p>
+
+    <p id="demo11"></p>
+
+    <script>
+
+        var x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("demo11").innerHTML =
+            "The value of z is " + z + ".";
+
+    </script>
+    <!--end Sample 1-->
+
+    <p>***************************************************</p>
+
+    <!--Statements-->
+    <h3>
+        Statements
+    </h3>
+    <p>
+        In HTML, JavaScript statements are executed by the browser.
+    </p>
+    <p id="demo12"></p>
+    <script>
+        document.getElementById("demo12").innerHTML = "Hello Emma."
+    </script>
+    <!--end Statement-->
+
+    <p>***************************************************</p>
+
+    <!--Semicolons-->
+    <h3>
+        Using Semicolons
+    </h3>
+    <p>
+        JavaScript statements are separated by semicolons.
+    </p>
+    <p id="demo13"></p>
+    <script>
+        var a, b, c;
+        a = 1;
+        b = 2;
+        c = a + b;
+
+        document.getElementById("demo13").innerHTML = c;
+    </script>
+    <!--end Semicolons-->
+
+    <p>***************************************************</p>
+
+    <!--Multiple Statements-->
+    <h3>
+        Writing Multiple Statements
+    </h3>
+    <p>
+        Multiple statements on one line are allowed.
+    </p>
+    <p id="demo14"></p>
+    <script>
+        var a, b, c;
+        a = 1; b = 2; c = a + b;
+
+        document.getElementById("demo14").innerHTML = c;
+    </script>
+    <!--end Multiple Statements-->
+
+    <p>***************************************************</p>
+
+    <!--JS ignores multiple spaces-->
+    <!--It is good practice to add spaces around operators (= + - * / )-->
+    <!--Line Length & Line Breaks-->
+    <h3>
+        Break Line After 80 Characters
+    </h3>
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+    <p id="demo15"></p>
+    <script>
+        document.getElementById("demo15").innerHTML =
+            "Hello Dolly!"
+    </script>
+    <!--end 80 Character Breaks-->
+
+    <p>***************************************************</p>
+
+    <!--Code Blocks {functions}-->
+    <h3>
+        Using Code Blocks
+    </h3>
+    <p>
+        JS code blocks are written between { and }
+    </p>
+    <button type="button" onclick="myFunction5()">
+        Click Me!
+    </button>
+    <p id="demo16"></p>
+    <p id="demo17"></p>
+    
+    <!--<script src="JavaScript.js"></script>-->
+
+    <script>
+        function myFunction5() {
+            document.getElementById("demo16").innerHTML = "Hello Dolly!";
+            document.getElementById("demo17").innerHTML = "How are you?";
+        }
+    </script>
+    
+
+</body>
+</html>
