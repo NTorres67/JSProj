@@ -93,6 +93,133 @@
 
     <p>***************************************************</p>
 
+    <!--Expressions-->
+    <!--Using Values-->
+    <h3>
+        Computing Values
+    </h3>
+    <p>
+        Expressions compute values.
+    </p>
+    <p id="demo23"></p>
+    <script>
+        document.getElementById("demo23").innerHTML = 5 * 10;
+    </script>
+    <!--end using Values -->
+
+    <p>***************************************************</p>
+
+    <!--Using Variables-->
+    <h3>
+        Computing Variables
+    </h3>
+    <p>
+        Using variables to compute expressions.
+    </p>
+    <p id="demo24"></p>
+    <script>
+        var x;
+        x = 5;
+        document.getElementById("demo24").innerHTML = x * 10;
+    </script>
+    <!--end Using Variables-->
+
+    <p>***************************************************</p>
+
+    <!--Using Strings-->
+    <h3>
+        Concatenating Strings
+    </h3>
+    <p>
+        Using strings to create expressions.
+    </p>
+    <p id="demo25"></p>
+    <script>
+        document.getElementById("demo25").innerHTML = "John" + " " + "Doe";
+    </script>
+    <!--end Using Strings-->
+    <!--end Expressions-->
+
+    <p>***************************************************</p>
+
+    <!--Keywords-->
+    <h3>
+        Keyword: var (variables)
+    </h3>
+    <p id="demo26"></p>
+    <script>
+        var x, y;
+        x = 5 + 6;
+        y = x * 10;
+        document.getElementById("demo26").innerHTML = y;
+    </script>
+    <!--end Keywords-->
+
+    <p>***************************************************</p>
+
+    <!--Comments-->
+    <h3>
+        Comments are NOT Executed
+    </h3>
+    <p id="demo27"></p>
+    <script>
+        var x;
+        x = 5;
+        // x = 6; not executed
+        document.getElementById("demo27").innerHTML = x;
+    </script>
+    <!--end Comments-->
+
+    <p>***************************************************</p>
+
+    <!--Identifiers (Names)-->
+    <p>
+        first character = letter, underscore(_) or dollar sign ($)
+    </p>
+    <p>
+        numbers are NOT allowed as the first character
+    </p>
+    <!--end Identifiers-->
+
+    <p>***************************************************</p>
+
+    <!--Case Sensitivity-->
+    <h3>
+        JS is Case Sensitive
+    </h3>
+    <p>
+        Change lastName to lastname.
+    </p>
+    <p id="demo28"></p>
+    <script>
+        var lastname, lastName;
+        lastName = "Doe";
+        lastname = "Peterson";
+        document.getElementById("demo28").innerHTML = LastName;
+    </script>
+    <!--end Case Sensitivity-->
+
+    <p>***************************************************</p>
+
+    <!--Camel Case-->
+    <h3>
+        Camel Case
+    </h3>
+    <p>
+        Hyphens are NOT allowed in JS as they are reserved for subtractions.
+    </p>
+    <p>
+        Underscore: first_name
+    </p>
+    <p>
+        Upper Camel Case (Pascal Case): FirstName, LastName
+    </p>
+    <p>
+        Lower Camel Case: firstName, lastName
+    </p>
+    <!--end Camel Case-->
+
+
 
 
 
