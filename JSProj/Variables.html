@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--Variables-->
+    <!--Example 1 - just like Algebra-->
+    <h3>
+        Example 1
+    </h3>
+    <p>
+        In this example, x, y, and z are variables.
+    </p>
+    <p id="demo30"></p>
+
+    <script>
+        var x = 5;
+        var y = 6;
+        var z = x + y;
+        document.getElementById("demo30").innerHTML =
+            "The value of z is: " + z;
+    </script>
+    <!--end Example 1-->
+
+    <p>***************************************************</p>
+
+    <!-- ( = ) is an assignment-->
+    <!-- ( == ) means equal to-->
+
+    <p>***************************************************</p>
+
+    <!--Data Types-->
+    <h3>
+        Data Types
+    </h3>
+    <p>
+        Strings are written with quotes.
+    </p>
+    <p>
+        Numbers are written WITHOUT quotes.
+    </p>
+
+    <p id="demo31"></p>
+
+    <script>
+        var pi = 3.14;
+        var person = "Emmalani Bryan";
+        var answer = 'Yes I am!';
+
+        document.getElementById("demo31").innerHTML =
+            pi + "<br>" + person + "<br>" + answer;
+    </script>
+    <!--end Data Types-->
+
+    <p>***************************************************</p>
+
+    <!--Declaring Variables ( var )-->
+    <h3>
+        Declaring Variables
+    </h3>
+    <p>
+        Create a variable, assign a value to it, and display it:
+    </p>
+    <p id="demo32"></p>
+    <script>
+        var carName = "Toyota";
+        document.getElementById("demo32").innerHTML = carName;
+    </script>
+    <!--end Declaring Variables-->
+
+    <p>***************************************************</p>
+
+    <!--One Statement, Many Variables-->
+    <!--it is good practice to declare all variables
+        at the beginning of the script-->
+    <!--start the statement with var and separate with commas-->
+    <h3>
+        Declaring Multiple Variables
+    </h3>
+    <p>
+        You can declare may variables in one statement.
+    </p>
+    <p id="demo33"></p>
+    <script>
+        var person = "Emmalani Bryan", carName = "Toyota", price = 200;
+        document.getElementById("demo33").innerHTML = carName;
+    </script>
+    <!--end One Statement, Many Variables-->
+
+    <p>***************************************************</p>
+
+    <!--Undefined Values-->
+    <h3>
+        Undefined Values
+    </h3>
+    <p>
+        A variable declared without a value will have the value undefined.
+    </p>
+    <p id="demo34"></p>
+    <script>
+        var petType;
+        document.getElementById("demo34").innerHTML = petType;
+    </script>
+    <!--end Undefined Values-->
+
+    <p>***************************************************</p>
+
+    <!--Re-Declaring Variables-->
+    <h3>
+        Re-Declaring Variables
+    </h3>
+    <p>
+        If you re-declare a JS variable, it will not lose its value.
+    </p>
+    <p id="demo35"></p>
+    <script>
+        var petName = "Mana"
+        var petName;
+        document.getElementById("demo35").innerHTML = petName;
+    </script>
+    <!--end Re-Declaring Variables-->
+
+    <p>***************************************************</p>
+
+    <!--Arithmetic-->
+    <h3>
+        Arithmetic - Numbers
+    </h3>
+    <p>
+        The result of adding 5 + 2 + 3:
+    </p>
+    <p id="demo36"></p>
+    <script>
+        var x = 5 + 2 + 3;
+        document.getElementById("demo36").innerHTML = x;
+    </script>
+    <p>***************************************************</p>
+    <h3>
+        Concatenating Strings
+    </h3>
+    <p>
+        The result of adding "Emmalani" + " " + "Bryan":
+    </p>
+    <p id="demo37"></p>
+    <script>
+        var y = "Emmalani" + " " + "Bryan";
+        document.getElementById("demo37").innerHTML = y;
+    </script>
+    <p>***************************************************</p>
+    <!--If you put the number in quotes, the rest of the numbers
+        will be treated a string as well and concatenate-->
+    <h3>
+        Treating Initial Number as a String
+    </h3>
+    <p>
+        The result of adding "5" + 2 + 3:
+    </p>
+    <p id="demo38"></p>
+    <script>
+        z = "5" + 2 + 3;
+        document.getElementById("demo38").innerHTML = z;
+    </script>
+    <p>***************************************************</p>
+    <!--If you put the last number in quotes, all numbers
+        prior to the number in quotes will be added
+        prior to concatenation-->
+    <h3>
+        Treating the Last Number as a String
+    </h3>
+    <p>
+        The result of adding 2 + 3 + "5":
+    </p>
+    <p id="demo39"></p>
+    <script>
+        var a = 2 + 3 + "5"
+        document.getElementById("demo39").innerHTML = a;
+    </script>
+    <!--end Arithmetic-->
+
+    <p>***************************************************</p>
+
+</body>
+</html>
