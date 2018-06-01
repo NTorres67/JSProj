@@ -166,6 +166,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="index.html" />
     <Content Include="JavaScript.js" />
+    <Content Include="Operators.html" />
     <Content Include="Output.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
