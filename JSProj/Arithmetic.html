@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Arithmetic</h1>
+
+    <!--Adding Literal Numbers-->
+    <p>
+        A typical arithmetic operation takes two number
+        and produces a new number.
+    </p>
+    <p id="demo62"></p>
+    <script>
+        var x = 100 + 50;
+        document.getElementById("demo62").innerHTML = x
+    </script>
+    <!--end adding literal numbers-->
+
+    <p>***************************************************</p>
+
+    <!--Adding Variables-->
+    <p>
+        A typical arithmetic operation takes two numbers (or variables)
+        and produce a new number.
+    </p>
+    <p id="demo63"></p>
+    <script>
+        var a = 100;
+        var b = 50;
+        var x = a + b;
+        document.getElementById("demo63").innerHTML = x;
+    </script><!--end adding variables-->
+
+    <p>***************************************************</p>
+
+    <!--adding expressions-->
+    <p>
+        Adding expressions
+    </p>
+    <p id="demo64"></p>
+    <script>
+        var a = 3;
+        var x = (100 + 50) * a;
+        document.getElementById("demo64").innerHTML = x;
+    </script>
+    <!--end adding expression-->
+
+    <p>***************************************************</p>
+
+    <!--Operators and Operands-->
+    <p>
+        <strong>operands:</strong> numbers (in an arithmetic operation)
+    </p>
+    <p>
+        <strong>operator:</strong> operation to be performed between two operands
+    </p>
+    <p>***************************************************</p>
+
+    <!--Addition-->
+    <p>
+        The + Operator
+    </p>
+    <p id="demo65"></p>
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        document.getElementById("demo65").innerHTML = z;
+    </script>
+    <!--end addition-->
+
+    <p>***************************************************</p>
+
+    <!--Subtraction-->
+    <p>
+        The - Operator
+    </p>
+    <p id="demo66"></p>
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x - y;
+        document.getElementById("demo66").innerHTML = z;
+    </script>
+    <!--end subtraction-->
+
+    <p>***************************************************</p>
+
+    <!--Multiplication-->
+    <p>
+        The * Operator
+    </p>
+    <p id="demo67"></p>
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x * y;
+        document.getElementById("demo67").innerHTML = z;
+    </script>
+    <!--end multiplication-->
+
+    <p>***************************************************</p>
+
+    <!--Division-->
+    <p>
+        The / Operator
+    </p>
+    <p id="demo68"></p>
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x / y;
+        document.getElementById("demo68").innerHTML = z;
+    </script>
+    <!--end division-->
+
+    <p>***************************************************</p>
+
+    <!--Remainder-->
+    <p>
+        The % (modulus) Operator returns the division remainder.
+    </p>
+    <p id="demo69"></p>
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = x % y;
+        document.getElementById("demo69").innerHTML = z;
+    </script>
+    <!--end modulus-->
+
+    <p>***************************************************</p>
+
+    <!--Incrementation-->
+    <p>
+        The ++ Operator
+    </p>
+    <p id="demo70"></p>
+    <script>
+        var x = 5;
+        x++;
+        var z = x;
+        document.getElementById("demo70").innerHTML = z;
+    </script>
+    <!--end incrementation-->
+
+    <p>***************************************************</p>
+
+    <!--Decrementation-->
+    <p>
+        The -- Operator
+    </p>
+    <p id="demo71"></p>
+    <script>
+        var x = 5;
+        x--;
+        var z = x;
+        document.getElementById("demo71").innerHTML = z;
+    </script>
+    <!--end decremation-->
+
+    <p>***************************************************</p>
+
+    <!--Precedence-->
+    <p>
+        Multiplication and division has precedence
+        over addition and subtraction.
+    </p>
+    <p id="demo72"></p>
+    <script>
+        document.getElementById("demo72").innerHTML = 100 + 50 * 3;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        Multiplication has precedence over addtion. <br />
+        But parenthesis has precedence over multiplication.
+    </p>
+    <p id="demo73"></p>
+    <script>
+        document.getElementById("demo73").innerHTML = (100 + 50) * 3;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        When many operations has the same precedence,
+        they are computed from left to right.
+    </p>
+    <p id="demo74"></p>
+    <script>
+        document.getElementById("demo74").innerHTML = 100 + 50 - 3;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>( ) == Expression Grouping</p>
+
+    <p>
+        . == Member ( (3 + 4) ) <br />
+        [] == Member (person.name)<br />
+        () -- Function call ( myFunction() ) <br />
+        new == Create ( new Date() )</p>
+
+    <p>
+        ++ == Postfix Increment ( i++ )<br />
+        -- == Postfix Decrement ( i-- )<br />
+    </p>
+
+    <p>
+        ++ == Prefix Increment ( ++i )<br />
+        -- == Prefix Decrement ( --i )<br />
+        ! == Logical not ( !(x==y) )
+    </p>
+
+    <p>
+        typeof == Type ( typeof x )<br />
+        ** == Expotentiation ( 10**2 )
+    </p>
+
+    <p>
+        << == Shift left ( x << 2 )<br />
+        >> == Shift right ( x >> 2 )<br />
+        >>> == Shift right (unsigned) ( x >>> 2 )
+    </p>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
