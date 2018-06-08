@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--Examples-->
+    var length = 16; <!-- Number -->
+    var lastName = "Bryan"; <!-- String -->
+    var x = {firstName:"Mana", lastName:"Torres"};
+    <!--end Examples-->
+
+    <p>***************************************************</p>
+
+    <!--Adding Numbers & Strings-->
+    <p>
+        When adding a number and a string,
+        JS will treat the number as a string.
+    </p>
+    <p id="demo100"></p>
+    <script>
+        var x = 16 + "Toyota";
+        document.getElementById("demo100").innerHTML = x
+    </script>
+    <p id="demo101"></p>
+    <script>
+        var y = "Toyota" + 16;
+        document.getElementById("demo101").innerHTML = y;
+    </script>
+    <p>***************************************************</p>
+    <!--Adding from left to right-->
+    <p>
+        Expressions are evaluated from left to right.
+        Different sequences can produce different results
+    </p>
+    <p id="demo102"></p>
+    <script>
+        var x = 16 + 4 + "Subaru";
+        document.getElementById("demo102").innerHTML = x;
+    </script>
+
+    <p id="demo103"></p>
+    <script>
+        var y = "Subaru" + 16 + 4;
+        document.getElementById("demo103").innerHTML = y;
+    </script>
+    <!--end adding from left to right-->
+
+    <p>***************************************************</p>
+
+
+
+</body>
+</html>
