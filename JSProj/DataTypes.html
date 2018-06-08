@@ -50,6 +50,238 @@
 
     <p>***************************************************</p>
 
+    <!--Dynamic Variables-->
+    <p>
+        JS has dynamic types. this means that the same variable
+        can be used to hold different data types:
+    </p>
+    <p id="demo104"></p>
+    <script>
+        var x;      // Now x is undefined
+        x = 5;      // Now x is a Number
+        x = "Mana"; // Now x is a String
+        document.getElementById("demo104").innerHTML = x;
+    </script>
+    <!--end dynamic variables-->
+
+    <p>***************************************************</p>
+
+    <!--Strings-->
+    <p>
+        Strings are written with double or single quotes.
+    </p>
+    <p id="demo105"></p>
+    <script>
+        var carName1 = "Toyota Tacoma";  // Using double quotes
+        var carName2 = 'Toyota Tacoma';  // Using single quotes
+        document.getElementById("demo105").innerHTML = carName1 +
+            "<br>" + carName2;
+    </script>
+    <!--end strings-->
+
+    <p>***************************************************</p>
+
+    <!--Double/Single Quotes-->
+    <p>
+        Quotes can be used inside of a string as long as they do not
+        match the quotes surrounding the string.
+    </p>
+    <p id="demo106"></p>
+    <script>
+        var answer1 = "It's alright";        // Single quote inside double quotes
+        var answer2 = "He is called 'Mana'"; // Single quote inside double qoutes
+        var answer3 = 'He is called "Mana"'; // Double quote inside single quotes
+        document.getElementById("demo106").innerHTML = answer1 +
+            "<br>" + answer2 + "<br>" + answer3;
+    </script>
+    <!--end double/single quotes-->
+
+    <p>***************************************************</p>
+
+    <!--Numbers with or without decimals-->
+    <p>
+        In JS, Numbers can be written with, or without decimals:
+    </p>
+    <p id="demo107"></p>
+    <script>
+        var x1 = 34.00; // With decimal
+        var x2 = 34;    // Without decimal
+        var x3 = 3.14;
+        document.getElementById("demo107").innerHTML = x1 +
+            "<br>" + x2 + "<br>" + x3;
+    </script>
+    <!--end numbers with or without decimals-->
+
+    <p>***************************************************</p>
+
+    <!--Scientific (exponential) notation-->
+    <p>
+        Extra large/small numbers can be written with
+        scientific (exponential notation:
+    </p>
+    <p id="demo108"></p>
+    <script>
+        var y = 123e5;
+        var z = 1235e-5;
+        document.getElementById("demo108").innerHTML = y +
+            "<br>" + z;
+    </script>
+    <!--end scientific (exponential) notation-->
+
+    <p>***************************************************</p>
+
+    <!--Booleans-->
+    <p>
+        Booleans: True or False
+    </p>
+    <p id="demo109"></p>
+    <script>
+        var x = 5;
+        var y = 5;
+        var z = 6;
+        document.getElementById("demo109").innerHTML = (x == y) +
+            "<br>" + (x == z);
+    </script>
+    <!--end Booleans-->
+
+    <p>***************************************************</p>
+
+    <!--Arrays-->
+    <p>
+        Array indexes are zero-based,
+        which means the first item is [0].
+    </p>
+    <p id="demo110"></p>
+    <script>
+        var cars = ["Subaru", "Toyota", "Dodge"]
+        document.getElementById("demo110").innerHTML = cars[0];
+    </script>
+    <!--end arrays-->
+
+    <p>***************************************************</p>
+
+    <!--Objects-->
+    <p>
+        Objects are written in curly braces {}.
+        Object properties are written as name: value pairs,
+        separated by commas.
+    </p>
+    <p id="demo111"></p>
+    <script>
+        var person = {
+            firstName: "Emmalani",
+            lastName: "Bryan",
+            age: 50,
+            eyeColor: "blue"
+        };
+        document.getElementById("demo111").innerHTML =
+            person.firstName + " is " + person.age + " years old.";
+    </script>
+    <!--end objects-->
+
+    <p>***************************************************</p>
+
+    <!--typeof operator-->
+    <p>
+        The typeof operator returns the type of a variable
+        or an expression.
+    </p>
+    <p id="demo112"></p>
+    <script>
+        document.getElementById("demo112").innerHTML =
+            typeof "" + "<br>" +            // Returns "string"
+            typeof "Emmalani" + "<br>" +    // Returns "string"
+            typeof "Emmalani Bryan";        // Returns "string"
+    </script>
+    <p>***************************************************</p>
+    <p id="demo113"></p>
+    <script>
+        document.getElementById("demo113").innerHTML =
+            typeof 0 + "<br>" +     // Returns "number"
+            typeof 314 + "<br>" +   // Returns "number"
+            typeof 3.14 + "<br>" +  // Returns "number"
+            typeof (3) + "<br>" +   // Returns "number"
+            typeof (3 + 4);         // Returns "number"
+    </script>
+    <!--end typeof operator-->
+
+    <p>***************************************************</p>
+
+    <!--undefined typeof-->
+    <p>
+        The value (and the data type) of a variable with no value
+        is <b>undefined</b>.
+    </p>
+    <p id="demo114"></p>
+    <script>
+        var car;    // Value is undefined, type is undefined
+        document.getElementById("demo114").innerHTML =
+            car + "<br>" + typeof car;
+    </script>
+    <!--end undefined typeof-->
+
+    <p>***************************************************</p>
+
+    <!--Emptied/undefined variable-->
+    <p>
+        Variables can be emptied if you set the value to
+        <b>undefined</b>.
+    </p>
+    <p id="demo115"></p>
+    <script>
+        var car = "Subaru";
+        car = undefined;    // Value & type is undefined
+        document.getElementById("demo115").innerHTML =
+            car + "<br>" + typeof car;
+    </script>
+    <!--end emptied/undefined variable-->
+
+    <p>***************************************************</p>
+
+    <!--empty values-->
+    <p>
+        An empty string has both a legal value and a type:
+    </p>
+    <p id="demo116"></p>
+    <script>
+        var car = "";   // The value is "", the typeof is "string"
+        document.getElementById("demo116").innerHTML =
+            "the value is: " +
+            car + "<br>" +
+            "The type is: " + typeof car;
+    </script>
+    <!--end empty value-->
+
+    <p>***************************************************</p>
+
+    <!--Null-->
+    <p>
+        Objects can be emptied by setting the value to
+        <b>null</b>.
+    </p>
+    <p id="demo117"></p>
+    <script>
+        var person = {
+            firstName: "Emmalani", lastName: "Bryan",
+            age: 50, eyeColor: "blue"
+        };
+        person = null;  //Now value is null, but type is still an object
+        document.getElementById("demo117").innerHTML = typeof person;
+    </script>
+    <p>***************************************************</p>
+    <p>
+        Objects can be emptied by setting the value to 
+        <b>undefined</b>.
+    </p>
+    <p id="demo118"></p>
+    <script>
+        var dog = {
+            firstName: "Mana", lastName: "Torres", age: 8,
+            eyeColor: "brown"
+        };
+        dog = undefined; // Now both value and type is undefined
+        document.getElementById("demo118").innerHTML = typeof dog;
+    </script>
 
 
 </body>
