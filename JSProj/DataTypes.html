@@ -270,7 +270,7 @@
     </script>
     <p>***************************************************</p>
     <p>
-        Objects can be emptied by setting the value to 
+        Objects can be emptied by setting the value to
         <b>undefined</b>.
     </p>
     <p id="demo118"></p>
@@ -282,7 +282,69 @@
         dog = undefined; // Now both value and type is undefined
         document.getElementById("demo118").innerHTML = typeof dog;
     </script>
+    <!--end Null-->
 
+    <p>***************************************************</p>
+
+    <!--Undefined vs Null-->
+    <p>
+        Undefined and null are equal in value but different in type:
+    </p>
+    <p id="demo119"></p>
+    <script>
+        document.getElementById("demo119").innerHTML =
+            typeof undefined + "<br>" +         // undefined
+            typeof null + "<br><br>" +          // object
+            (null === undefined) + "<br>" +      // false
+            (null == undefined) + "<br>";       // true
+    </script>
+    <!--end undefined vs null-->
+
+    <p>***************************************************</p>
+
+    <!--Primative Types-->
+    <p>
+        The typeof operator returns the type of a variable
+        on an expression.
+    </p>
+    <p id="demo120"></p>
+    <script>
+        document.getElementById("demo120").innerHTML =
+            typeof "Mana" + "<br>" +
+            typeof 3.14 + "<br>" +
+            typeof true + "<br>" +
+            typeof false + "<br>" +
+            typeof q;
+    </script>
+    <!--end primative types-->
+
+    <p>***************************************************</p>
+
+    <!--Complex Data-->
+    <p>
+        Complex Types: function & object. 
+    </p>
+    <p>
+        The typeof operator returns objects for both objects, 
+        arrays, and null.
+    </p>
+    <p>
+        The typeof operator does not return object for functions.
+    </p>
+    <p id="demo121"></p>
+    <script>
+        document.getElementById("demo121").innerHTML =
+            typeof { name: 'mana', age: 7 } + "<br>" +
+            typeof [1, 2, 3, 4] + "<br>" +
+            typeof null + "<br>" +
+            typeof function myFunc() { };
+    </script>
+    <!--end complex data-->
+
+    <p>
+        The typeof operator returns "object" for arrays because in
+        JS arrays are objects.
+    </p>
 
 </body>
 </html>
