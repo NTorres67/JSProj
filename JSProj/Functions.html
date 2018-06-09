@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--Calling Functions-->
+    <p>
+        A JS function is a block of code designed to perform a particular task. <br />
+        A JS function is executed when "something" calls it. <br /> <br />
+        This example calls a function which performs a calculation,
+        and returns the result:
+    </p>
+    <p id="demo122"></p>
+    <script>
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        document.getElementById("demo122").innerHTML =
+            myFunction(4, 3);
+    </script>
+    <!--end calling functions-->
+
+    <p>***************************************************</p>
+
+    <!--Function Syntax-->
+    <p>
+        A JS function is defined by the <b>function</b> keyword,
+        followed by a <b>name</b>, followed by parentheses <b>()</b>, <br />
+        which are separated by commas: <b>(parameter1, parameter2,...)</b>. <br />
+        The code to be executed, by the function, is placed inside
+        curly brackets: <b>{}</b>.
+    </p>
+    <p>
+        Example: <br />
+        function name(parameter1, parameter2, parameter3) {<br />
+        code to be executed. <br />
+        }
+    </p>
+    <!--end function syntax-->
+
+    <p>***************************************************</p>
+
+    <!--Function Invocation-->
+    <p>
+        The code inside the function will execute when "something"
+        <b>invokes</b> (calls) the function: <br /><br />
+        - When an even occurs (when a user clicks a button)<br />
+        - When it is invoked (called) from JS code<br />
+        - Automatically (self invoked)
+    </p>
+    <!--end function invocation-->
+
+    <p>***************************************************</p>
+
+    <!--Function Return-->
+    <p>
+        When JS reaches a <b>return statement</b>, the function will
+        stop executing. <br /><br />
+        If the function was invoked from a statement, JS will "return" 
+        to execute the code after invoking the statement.<br /><br />
+        Functions often compute a <b>return value</b>. The return
+        value is "returned" back to the "caller":<br /><br />
+        Example: Calculate the product of two numbers, and
+        return the result:
+    </p>
+    <p id="demo123"></p>
+    <script>
+        var d = myFunction(4, 3);
+        document.getElementById("demo123").innerHTML = d;
+
+        function myFunction(a, b) {
+            return a * b;
+        }
+    </script>
+
+</body>
+</html>
