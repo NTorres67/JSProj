@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--Explanation-->
+    <p>
+        A car has <b>properties</b> like weight and color,
+        and <b>methods</b> like start and stop: <br /><br />
+        <b>Properties</b><br />
+        car.name = Toyota <br />
+        car.model = Tacoma <br />
+        car.weight = 1200kg<br />
+        car.color = white<br /><br />
+        <b>Methods</b><br />
+        car.start()<br />
+        car.drive()<br />
+        car.brake()<br />
+        car.stop()<br />
+    </p>
+    <!--end explanation-->
+
+    <p>***************************************************</p>
+
+    <!--Simple value to variable-->
+    <p>
+        Assign simple value to variable named car.
+    </p>
+    <p id="demo136"></p>
+    <script>
+        //Create and display a variable:
+        var car = "Toyota";
+        document.getElementById("demo136").innerHTML = car;
+    </script>
+    <!--end simple value to variable-->
+
+    <p>***************************************************</p>
+
+    <!--Many values to a variable-->
+    <p>
+        Assigning many values to a varible named truck.
+    </p>
+    <p id="demo137"></p>
+    <script>
+        // Create an object:
+        var truck = { type: "Toyota", model: "Tacoma", color: "red" };
+        document.getElementById("demo137").innerHTML = truck.type;
+    </script>
+    <p>
+        The values are written as <b>name:value</b> pairs
+        (name and value separated by a colon).<br /><br />
+        JS objects are containers for <b>named values</b> 
+        called properties or methods.
+    </p>
+    <!--end many values to a variable-->
+
+    <p>***************************************************</p>
+
+    <!--Object Definition-->
+    <p>
+        JS objects are created with an object literal:
+    </p>
+    <p id="demo138"></p>
+    <script>
+        // Create an object on a single line:
+        var pup = {
+            firstName: "Emmalani", lastName: "Bryan",
+            age: 4, eyeColor: "brown"
+        };
+        // Display some data from the object:
+        document.getElementById("demo138").innerHTML =
+            pup.firstName + " is " + pup.age + " years old.";
+    </script>
+
+    <p id="demo139"></p>
+    <script>
+        // Create an object spanning multiple lines:
+        var dog = {
+            firstName: "Mana",
+            lastName: "Torres",
+            age: 7,
+            eyeColor: "brown"
+        };
+        //Display some data from the object:
+        document.getElementById("demo139").innerHTML = 
+            dog.firstName + " is " + dog.age + " years old.";
+    </script>
+
+
+</body>
+</html>
