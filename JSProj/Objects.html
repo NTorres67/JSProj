@@ -51,7 +51,7 @@
     <p>
         The values are written as <b>name:value</b> pairs
         (name and value separated by a colon).<br /><br />
-        JS objects are containers for <b>named values</b> 
+        JS objects are containers for <b>named values</b>
         called properties or methods.
     </p>
     <!--end many values to a variable-->
@@ -84,9 +84,148 @@
             eyeColor: "brown"
         };
         //Display some data from the object:
-        document.getElementById("demo139").innerHTML = 
+        document.getElementById("demo139").innerHTML =
             dog.firstName + " is " + dog.age + " years old.";
     </script>
+    <!-- end object definition-->
+
+    <p>***************************************************</p>
+
+    <!--Accessing Properties-->
+    <p>
+        Two ways to access object properties: <br />
+        objectName.propertyName<br />
+        or<br />
+        objectName["propertyName"]
+    </p>
+    <p>
+        Example 1:
+    </p>
+    <p id="demo140"></p>
+    <script>
+        // Create an object:
+        var pup = {
+            firstName: "Emmalani",
+            lastName: "Bryan",
+            id: 5566
+        };
+        //Display some data from the object:
+        document.getElementById("demo140").innerHTML =
+            pup.firstName + " " + pup.lastName;
+    </script>
+    <p>
+        Example 2:
+    </p>
+    <p id="demo141"></p>
+    <script>
+        // Create an object:
+        var dog = {
+            firstName: "Mana",
+            lastName: "Torres",
+            id: 7788
+        };
+        // Display some data from the object:
+        document.getElementById("demo141").innerHTML =
+            dog["firstName"] + " " + dog["lastName"];
+    </script>
+    <!--end accessing properties-->
+
+    <p>***************************************************</p>
+
+    <!--Object Methods-->
+    <p>
+        A method is a function stored as a property.<br /><br />
+        <b>Property ... Property Value</b><br />
+        firstName .. Emmalani<br />
+        lastName ... Bryan<br />
+        age ............. 4<br />
+        eyeColor ... brown<br />
+        fullName ... function() {return this.firstName + " " + this.lastName;}
+    </p>
+    <p>
+        Example: <br />
+        var person = { <br />
+        firstName: "Mana",<br />
+        lastName: "Torres",<br />
+        id: 8899,<br />
+        fullName: function () {<br />
+        return this.firstName + " " + this.lastName;<br />
+        }<br />
+        };<br />
+    </p>
+    <!--end object methods-->
+
+    <p>***************************************************</p>
+
+    <!-- this Keyword-->
+    <p>
+        <b>this</b> refers to the "owner" of the function.
+    </p>
+    <!--end this keyword-->
+
+    <p>***************************************************</p>
+
+    <!--Accessing Object Methods-->
+    <p>
+        Access an object method with the following syntax:<br />
+        objectName.methodName().
+    </p>
+    <p>
+        An object method is a function definition,
+        stored as a property value.
+    </p>
+    <p id="demo142"></p>
+    <script>
+        // Create an object:
+        var pup = {
+            firstName: "Emmalani",
+            lastName: "Bryan",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        // Display data from the object:
+        document.getElementById("demo142").innerHTML =
+            pup.fullName();
+    </script>
+    <p>
+        If you access a method <b>without()</b>, it will return
+        the <b>function definition:</b>
+    </p>
+    <p id="demo143"></p>
+    <script>
+        // Create an object:
+        var dog = {
+            firstName: "Mana",
+            lastName: "Torres",
+            id: 8899,
+            fullName: function () {
+                return this.fullName + " " + this.lastName;
+            }
+        };
+        // Display data from the object:
+        document.getElementById("demo143").innerHTML =
+            dog.fullName;
+    </script>
+    <!--end accessing object methods-->
+
+    <p>***************************************************</p>
+
+    <!--"new" keyword-->
+    <p>
+        When a JS variable is declared with the keyword "new", 
+        the variable is created as an object: <br /><br />
+        var x = new String(); // Declares x as a String Object<br />
+        var y = new Number(); // Declares y as a Number Object<br />
+        var z = new Boolean(); // Declares z as a Boolean Object
+    </p>
+    <p>
+        Avoid String, Number, and Boolean objects. They complicate 
+        your code and slow down execution speed.
+    </p>
+    <!--end "new" keyword-->
+
 
 
 </body>
