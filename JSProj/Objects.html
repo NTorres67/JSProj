@@ -157,7 +157,7 @@
 
     <p>***************************************************</p>
 
-    <!-- this Keyword-->
+    <!-- "this" Keyword-->
     <p>
         <b>this</b> refers to the "owner" of the function.
     </p>
@@ -214,17 +214,67 @@
 
     <!--"new" keyword-->
     <p>
-        When a JS variable is declared with the keyword "new", 
+        When a JS variable is declared with the keyword "new",
         the variable is created as an object: <br /><br />
         var x = new String(); // Declares x as a String Object<br />
         var y = new Number(); // Declares y as a Number Object<br />
         var z = new Boolean(); // Declares z as a Boolean Object
     </p>
     <p>
-        Avoid String, Number, and Boolean objects. They complicate 
+        Avoid String, Number, and Boolean objects. They complicate
         your code and slow down execution speed.
     </p>
     <!--end "new" keyword-->
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 1: Display "John" by extracting information
+        from the person object.
+    </p>
+    <p id="demo151">Display the result here.</p>
+
+    <script>
+        var person = { firstName: "John", lastName: "Doe" };
+
+        document.getElementById("demo151").innerHTML = person.firstName;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 2: Add the following property
+        and value to the person object: <b>country: USA</b>
+    </p>
+    <p id="demo152"></p>
+
+    <script>
+        var person = { firstName: "John", lastName: "Doe", country: "USA" };
+        document.getElementById("demo152").innerHTML = person.country;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 3: Create an object called person with name = John, age = 50.
+        Then, access the object to display "John is 50 years old".
+    </p>
+    <p id="demo153">Display the result here.</p>
+
+    <script>
+        // Create the object here
+        var person = {
+            name: "John",
+            age: 50,
+            nameAge: function () {
+                return this.name + " is " + this.age + " years old";
+            }
+        };
+        document.getElementById("demo153").innerHTML = person.nameAge();
+    </script>
+
+  
+
 
 
 
