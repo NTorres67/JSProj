@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--Types-->
+    <p>
+        Types of scope:<br />
+        <b>Local:</b> Can only be accessed within the function. <br />
+        <b>Global:</b> All scripts and functions on a web page can
+        access it.
+    </p>
+    <p>
+        Scope determines the accessibility/visibility of these variables.
+    </p>
+    <!--end types-->
+
+    <p>***************************************************</p>
+
+    <!--Local Scope-->
+    <p>
+        The variable carName belongs to myFunction().
+    </p>
+    <p id="demo154"></p>
+    <script>
+        myFunction5();
+        document.getElementById("demo154").innerHTML =
+            "Outside myFunction() carName is " + typeof carName + ".";
+
+        function myFunction5() {
+            var carName = "Toyota";
+        }
+    </script>
+    <!--end local scope-->
+
+    <p>***************************************************</p>
+
+    <!--Global Scope-->
+    <p>
+        A GLOBAL variable can be accessed from any script or function.
+    </p>
+    <p id="demo155"></p>
+    <script>
+        // code here can use carName
+        var carName = "Volvo";
+        myFunction6();
+
+        // code here can also use carName
+        function myFunction6() {
+            document.getElementById("demo155").innerHTML =
+                "I can display " + carName;
+        }
+    </script>
+    <!--end global scope-->
+
+    <p>***************************************************</p>
+
+    <!--Automatically Global-->
+    <p>
+        Undeclared variables with assigned values automatically become a
+        <b>GLOBAL</b> variable.
+    </p>
+    <p id="demo156"></p>
+    <script>
+        myFunction7();
+
+        // code here can use carName as a global variable
+        document.getElementById("demo156").innerHTML =
+            "I can display " + carName;
+        function myFunction7() {
+            carName = "Subaru";
+        }
+    </script>
+    <!--end automatically global-->
+
+    <p>***************************************************</p>
+
+    <!--Global Variables in HTML-->
+    <p>
+        In HTML, all global variables will become window variables.
+    </p>
+    <p id="demo157"></p>
+    <script>
+        var carName = "Subaru";
+
+        // code here can use use window.carName
+        document.getElementById("demo157").innerHTML =
+            "I can display " + window.carName;
+    </script>
+    <p>
+        DO NOT create global variables unless you intend to.
+    </p>
+    <!--end global variables in HTML-->
+
+    <p>***************************************************</p>
+
+
+
+</body>
+</html>
