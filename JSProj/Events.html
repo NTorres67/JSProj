@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--Examples of HTML Events-->
+    <p>
+        Examples of HTML Events: <br />
+        - HTML web page has finished loading<br />
+        - HTML input field was changed
+        - HTML button was clicked
+    </p>
+    <!--end HTML exmples-->
+
+    <p>***************************************************</p>
+
+    <!--onclick-->
+
+    <p>
+        Onclick attribute added to button element.
+    </p>
+    <button onclick="document.getElementById('demo158').innerHTML=Date()">
+        The time is?
+    </button>
+    <p id="demo158"></p>
+    <!--end onclick-->
+
+    <p>***************************************************</p>
+
+    <!--Changing the content of Element-->
+    <p>
+        Changing the content of the element using <b>this</b>.innerHTML
+        instead of id="demo".
+    </p>
+    <button onclick="this.innerHTML=Date()">
+        The time is?
+    </button>
+    <!--end changing content of the element-->
+
+    <p>***************************************************</p>
+
+    <!--calling functions-->
+    <p>
+        JS code is often several lines long.
+        It is more common to see event attributes calling functions:
+    </p>
+    <p>
+        Click the button to display the date.
+    </p>
+    <button onclick="displayDate()">
+        The time is?
+    </button>
+    <script>
+        function displayDate() {
+            document.getElementById("demo159").innerHTML = Date();
+        }
+    </script>
+    <p id="demo159"></p>
+    <!--end calling functions-->
+
+    <p>***************************************************</p>
+
+    <h3>Common HTML Events</h3>
+    <p>
+        <b>Event</b> + "       " + <b>Description</b><br />
+        onchange:     An HTML Element has been changed<br />
+        onclick:      The user clicks an HTML element<br />
+        onmouseover:  The user moves the mouse over an HTML element<br />
+        onmouseout:   The user moves the mouse away from an HTML element<br />
+        onkeydown:    The user pushes a keyboard key<br />
+        onload:       The browser has finised loanding the page
+    </p>
+
+
+</body>
+</html>
