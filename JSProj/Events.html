@@ -63,6 +63,7 @@
 
     <p>***************************************************</p>
 
+    <!--Common HTML Events-->
     <h3>Common HTML Events</h3>
     <p>
         <b>Event</b> + "       " + <b>Description</b><br />
@@ -73,6 +74,64 @@
         onkeydown:    The user pushes a keyboard key<br />
         onload:       The browser has finised loanding the page
     </p>
+    <!--end common HTML events-->
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 1: The
+    <p>
+        element should do something when someone clicks on it.
+        Try to fix it!
+    </p>
+    <!--<p someevent="this.innerHTML='GOOD JOB!'">Click me.</p>-->
+    <p onclick="this.innerHTML='GOOD JOB!'">
+        Click me.
+    </p>
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 2: When the button is clicked,
+        trigger myFunction() with an event.
+    </p>
+
+    <!--<button>Click Me</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+    }
+    </script>-->
+
+    <button onclick=myFunction()>Click Me</button>
+
+    <p id="demo162"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo162").innerHTML =
+                "Hello World";
+        }
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 3: The <span>
+            element should do something
+            when someone moves the mouse over it. Try to fix it!
+    </p>
+
+    <!--<span someevent="this.style.color='red'">Mouse over me!</span>-->
+
+    <span onmouseover="this.style.color='red'">Mouse over me!</span>
+
+    <p>***************************************************</p>
+
+
 
 
 </body>
