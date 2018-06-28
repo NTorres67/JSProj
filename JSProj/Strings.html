@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h2>JavaScript Strings</h2>
+
+    <!--Written inside Quotes-->
+    <p>
+        Strings are written inside quotes.
+    </p>
+    <p id="demo163"></p>
+    <script>
+        var x = "Emmalani Bryan"; // String writtin inside quotes
+        document.getElementById("demo163").innerHTML = x;
+    </script>
+    <!--end written inside quotes-->
+
+    <p>***************************************************</p>
+
+    <!--Single or Double Quotes-->
+    <p>
+        Strings can be written with either double or single quotes.
+    </p>
+    <p id="demo164"></p>
+
+    <script>
+        var carName1 = "Subaru Crosstrek"; // Double quotes
+        var carName2 = 'Toyota Tacoma'; // Single quotes
+
+        document.getElementById("demo164").innerHTML =
+            carName1 + " " + carName2;
+    </script>
+    <!--end double or single quotes-->
+
+    <p>***************************************************</p>
+
+    <!--Using Double AND Single Quotes-->
+    <p>
+        You can use quotes inside a string, as long as they
+        don't match the quotes surrounding the string.
+    </p>
+    <p id="demo165"></p>
+
+    <script>
+        var answer1 = "It's alright";
+        var answer2 = "She is called 'Emmalani'";
+        var answer3 = 'He is called "Mana"';
+
+        document.getElementById("demo165").innerHTML =
+            answer1 + "<br>" + answer2 + "<br>" + answer3;
+    </script>
+    <!--end using double and single quotes-->
+
+    <p>***************************************************</p>
+
+    <!--String Length-->
+    <h4>
+        JS String Properties
+    </h4>
+    <p>
+        The length property returns the length of the string:
+    </p>
+    <p id="demo166"></p>
+
+    <script>
+        var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo166").innerHTML = txt.length;
+    </script>
+    <!--end string length-->
+
+    <p>***************************************************</p>
+
+    <!--Special Characters: backslash escape character (\)-->
+    <p>
+        The escape sequence \" inserts a double quote in a string.
+    </p>
+    <p id="demo167"></p>
+
+    <script>
+        var x = "We are the so-called \"Vikings\" from the north.";
+        document.getElementById("demo167").innerHTML = x;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        The escape sequence \' inserts a single quote in a string.
+    </p>
+    <p id="demo168"></p>
+
+    <script>
+        var x = 'It\'s alright.';
+        document.getElementById("demo168").innerHTML = x;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        The escape sequence \\ inserts a backslash in a string.
+    </p>
+    <p id="demo169"></p>
+
+    <script>
+        var x = "The character \\ is called a backslash.";
+        document.getElementById("demo169").innerHTML = x;
+    </script>
+    <!--end backslash escape character-->
+
+    <p>***************************************************</p>
+
+    <!--Breaking Long Code Lines-->
+    <p>
+        For best readability, avoid code lines longer then 80 characters.<br />
+        The best place to break a code line is after an operator
+        or a comma.
+    </p>
+    <p id="demo170"></p>
+
+    <script>
+        document.getElementById("demo170").innerHTML =
+            "Hello Dolly!"
+    </script>
+    <!--end breaking long code lines-->
+
+    <p>***************************************************</p>
+
+    <!--Breaking Up A Code Line-->
+    <p>
+        The safest way to break up a code line in a string
+        is using string addition.
+    </p>
+    <p id="demo171"></p>
+
+    <script>
+        document.getElementById("demo171").innerHTML = "Hello " +
+            "Dolly!";
+    </script>
+    <p>***************************************************</p>
+    <p id="demo172">You cannot break a code line with a \ backslash.</p>
+
+    <script>
+        document.getElementById("demo172").innerHTML = \
+        "Hello Dolly.";
+    </script>
+    <!--end Breaking Up a Code Line-->
+
+    <p>***************************************************</p>
+
+    <!--Strings As Objects-->
+    <p>
+        Strings can be defined as objects with the word new:<br />
+        <b>var firstName = new String("Emmalani");</b>
+    </p>
+    <p id="demo173"></p>
+
+    <script>
+        var x = "Emmalani";             // x is a string
+        var y = new String("Emmalani"); // y is an object
+
+        document.getElementById("demo173").innerHTML =
+            typeof x + "<br>" + typeof y;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        <b>Never Create Strings as objects.</b><br /><br />
+        Strings and objects cannot be safely compared.
+    </p>
+    <p id="demo174"></p>
+
+    <script>
+        var x = "Mana";              // x is a string
+        var y = new String("Mana");  // y is an object
+
+        document.getElementById("demo174").innerHTML = (x == y);
+        // (x == y) is true because x and y have equal values
+    </script>
+
+    <p>***************************************************</p>
+
+    <p id="demo175"></p>
+
+    <script>
+        var x = "Mana";              // x is a string
+        var y = new String("Mana");  // y is an object
+
+        document.getElementById("demo175").innerHTML = (x === y);
+        // (x===y) is false because x and y have different types
+        // (string and object)
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        <b>Never Create Strings as Objects.</b><br /><br />
+        JS objects annot be compared.
+    </p>
+    <p id="demo176"></p>
+
+    <script>
+        var x = new String("Mana");  // x is an object
+        var y = new String("Mana");  // y is an object
+
+        document.getElementById("demo176").innerHTML = (x == y);
+        // (x == y) is false because x and y are diffeent objects
+    </script>
+    <p>***************************************************</p>
+    <p id="demo177"></p>
+
+    <script>
+        var x = new String("Mana");  // x is an object
+        var y = new String("Mana");  // y is an object
+
+        document.getElementById("demo177").innerHTML = (x === y);
+            // ( x === y) is false because x and y are different objects
+    </script>
+
+    <p>
+        *** Note the difference between (x == y) and (x === y). <br />
+        Comparing two JavaScript objects will <b>always</b> return
+        false.
+    </p>
+    <!--end strings as objects-->
+
+    <p>***************************************************</p>
+
+    <p>
+
+    </p>
+
+
+
+
+</body>
+</html>

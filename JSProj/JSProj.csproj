@@ -181,6 +181,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Statements.html" />
+    <Content Include="Strings.html" />
     <Content Include="Syntax.html" />
     <Content Include="Variables.html" />
     <Content Include="whereTo.html" />
