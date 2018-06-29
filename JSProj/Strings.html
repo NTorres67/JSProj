@@ -127,7 +127,7 @@
 
     <p>***************************************************</p>
 
-    <!--Breaking Up A Code Line-->
+    <!--Breaking Up A Code Line With String Addition-->
     <p>
         The safest way to break up a code line in a string
         is using string addition.
@@ -145,7 +145,7 @@
         document.getElementById("demo172").innerHTML = \
         "Hello Dolly.";
     </script>
-    <!--end Breaking Up a Code Line-->
+    <!--end Breaking Up a Code Line With String Addition-->
 
     <p>***************************************************</p>
 
@@ -216,7 +216,7 @@
         var y = new String("Mana");  // y is an object
 
         document.getElementById("demo177").innerHTML = (x === y);
-            // ( x === y) is false because x and y are different objects
+        // ( x === y) is false because x and y are different objects
     </script>
 
     <p>
@@ -229,11 +229,58 @@
     <p>***************************************************</p>
 
     <p>
-
+        Exercise 1: Assign the string "Hello World!"
+        to the variable txt.
     </p>
+    <p id="demo181"></p>
 
+    <script>
+        // var txt;
+        var txt = "Hello World!";
+        document.getElementById("demo181").innerHTML = txt;
+    </script>
 
+    <p>***************************************************</p>
 
+    <p>
+        Exercise 2: Use the length property to display
+        the length of the txt variable's value.
+    </p>
+    <p id="demo182"></p>
+
+    <script>
+        var txt = "Hello World!";
+        // document.getElementById("demo182").innerHTML = txt;
+        document.getElementById("demo182").innerHTML = txt.length;
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 3:  The string below is broken -
+        use escape characters to display the text correctly.
+    </p>
+    <p id="demo183"></p>
+
+    <script>
+        // document.getElementById("demo183").innerHTML = "We are "Vikings".";
+        document.getElementById("demo183").innerHTML = "We are \"Vikings\".";
+    </script>
+
+    <p>***************************************************</p>
+
+    <p>
+        Exercise 4: Concatenate the two strings to display
+        "Hello World!".
+    </p>
+    <p id="demo184">Display the result here.</p>
+
+    <script>
+        var str1 = "Hello ";
+        var str2 = "World!";
+
+        document.getElementById("demo184").innerHTML = str1 + " " + str2;
+    </script>
 
 </body>
 </html>
